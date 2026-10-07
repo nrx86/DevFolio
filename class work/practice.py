@@ -1,0 +1,24 @@
+# series=[35,45,36,21,30,1,2]
+# min=series[0]
+# max=series[0]
+# for i in series:
+#     if i<min:
+#         min=i
+#     if i>max:
+#         max=i
+
+# print(min)
+# print(max)  
+
+
+series=[35,45,36,21,30,1,2]
+max = series[0]
+second_max = series[0]
+for i in series:
+    if i>max:
+        second_max=max
+        max=i
+    elif i>second_max and i!=max:
+        second_max=i
+print("The second largest number is:", second_max)
+
